@@ -24,5 +24,6 @@ public class UsedGoodsBO {
 		//데이터 조작(가져온 데이터 조작하기 )
 		
 		return list;
+		
 	}
 }
