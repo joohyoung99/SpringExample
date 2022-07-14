@@ -21,5 +21,18 @@ public class UserBO {
 	public User getLastUser() {
 		return userDAO.selectLastUser();
 	}
+	
+	public int addUserWithId(User user) {
+		
+//		//객체로 insert
+//		User user = new User();
+//		user.setName(name);
+//		user.setYyyymmdd(yyyymmdd);
+//		user.setIntroduce(introduce);
+//		user.setEmail(email);
+		
+		return userDAO.insertUserWithId(user);
+		
+	}
 
 }
