@@ -17,7 +17,7 @@
 		<textarea rows="5" cols="30" name="introduce" id="introduceInput"></textarea><br>
 		<label>이메일</label><input type="text" name="email" id="emailInput"><br>
 		<button type="button" id="addBtn">추가</button>
-	</form>
+	//</form>
 	
 	
 	<script>
@@ -56,7 +56,19 @@
 					//response를 위한 옵션
 					success:function(data){
 						//alert(data);
-						location.href="/ajax/user/list";
+						//{"result":"success"}
+						//{"result":"fail"}
+						//만약에 성공했으면 리스트로 이동
+						if(data.result == "success"){
+							location.href="/ajax/user/list";
+						}else{
+							//실패했으면 alert띄우기
+							alert("삽입실패!!");
+						}
+						
+						
+						//alert(data.result);
+						
 					},
 					error:function(){
 						

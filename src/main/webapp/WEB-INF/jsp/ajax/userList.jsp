@@ -23,8 +23,8 @@
 		<c:forEach var="user" items="${userList }">
 			<tr>
 				<td>${user.name }</td>
-				<td>${user.yyyymmdd }</td>
-				<td>${user.introduce }</td>
+				<td>${user.yyyymmdd}</td>
+				<td>${user.introduce}</td>
 				<td>${user.email }</td>
 			</tr>
 		</c:forEach>

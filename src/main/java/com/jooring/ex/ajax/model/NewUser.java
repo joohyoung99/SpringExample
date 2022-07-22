@@ -8,7 +8,7 @@ public class NewUser {
 	private int id;
 	private String name;
 	private String yyyymmdd;
-	private String introduce;;
+	private String introduce;
 	private String email;
 	private Date createdAt;
 	private Date updatedAt;
